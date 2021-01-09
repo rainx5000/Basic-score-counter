@@ -1,0 +1,141 @@
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------------------------------------------------------------------- */
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #9cfaac;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    background-color: rgb(197, 242, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vh;
+    height: 50%;
+    margin-top: 10vh;
+
+    
+}
+
+img, h1, h2 {
+    align-self: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: #9cfaac;
+    border-bottom: 2vh solid #9cfaac;
+
+}
+h1, h2, .selectLabel, .playUpTo {
+    width: fit-content;
+}
+h1 {
+    font-size: 3vh;
+}
+
+h2 {
+    font-size: 8vh;
+}
+.selectLabel {
+    font-size: 3vh;
+}
+
+.playUpTo {
+    outline: none;
+    font-size: 3vh;
+}
+
+.buttons {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons > button {
+    width: 33.3333333%;
+    height: 100%;
+    font-size: 3vh;
+    outline: none;
+    border: 0;
+}
+.buttons > button:hover {
+    cursor: pointer;
+}
+
+.buttons > button:nth-child(1) {
+    background-color: rgb(52, 79, 131);
+}
+.buttons > button:nth-child(2) {
+    background-color: rgb(87, 158, 87);
+}
+.buttons > button:nth-child(3) {
+    background-color: rgb(214, 10, 10);
+}
+
+.winColor {
+    color: green;
+}
+
+.loseColor {
+    color: red;
+}
